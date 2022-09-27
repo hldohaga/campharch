@@ -1,0 +1,21 @@
+---
+title: "jsna analysis"
+output: html_notebook
+---
+
+This document is intended to amalgamate jsna documents into corpus elements
+
+```{r}
+library(readtext)
+library(quanteda)
+
+
+ce_jsnas <- file.path("/media/david/Elements1/contents/DOHmed/MPH/MPHModules/dissertation/r/jsna/campharch", "/cheshire east/*.bib")
+
+ce_jsnas_txt <- readtext(ce_jsnas)
+
+corp_ce_jsnas <- corpus(ce_jsnas_txt)
+
+```
+
+Add a new 
