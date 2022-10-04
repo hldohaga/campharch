@@ -8,14 +8,47 @@ This document is intended to amalgamate jsna documents into corpus elements
 ```{r}
 library(readtext)
 library(quanteda)
+```
 
-
-ce_jsnas <- file.path("/media/david/Elements1/contents/DOHmed/MPH/MPHModules/dissertation/r/jsna/campharch", "/cheshire east/*.bib")
+```{r}
+#cheshire east 
+ce_jsnas <- file.path("/media/david/Elements1/contents/DOHmed/MPH/MPHModules/dissertation/r/jsna/campharch", "/cheshire east/*")
 
 ce_jsnas_txt <- readtext(ce_jsnas)
 
 corp_ce_jsnas <- corpus(ce_jsnas_txt)
-
+summary(corp_ce_jsnas)
 ```
 
 Add a new 
+```{r}
+#cheshire west 
+cw_jsnas <- file.path("/media/david/Elements1/contents/DOHmed/MPH/MPHModules/dissertation/r/jsna/campharch", "/cheshire west/*")
+
+cw_jsnas_txt <- readtext(cw_jsnas)
+
+corp_cw_jsnas <- corpus(cw_jsnas_txt)
+summary(corp_cw_jsnas)
+
+
+
+```
+
+more
+
+```{r}
+#liverpool
+#cheshire east 
+L_jsnas <- file.path("/media/david/Elements1/contents/DOHmed/MPH/MPHModules/dissertation/r/jsna/campharch", "/liverpool/*")
+
+L_jsnas_txt <- readtext(L_jsnas)
+
+corp_L_jsnas <- corpus(L_jsnas_txt)
+summary(corp_L_jsnas)
+
+```
+
+
+
+
+
